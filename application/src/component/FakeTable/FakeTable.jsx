@@ -25,7 +25,7 @@ function randomDatas(seedPage,lang,mistake,userNumber=1){
     
    }
   
-    const s=[];
+    const ConfirmedData = [];
     const amountOfUsers=page?page*20:20;
 
   
@@ -89,12 +89,12 @@ function randomDatas(seedPage,lang,mistake,userNumber=1){
           address:fakeDataRegulation[4],
           phoneNumber:fakeDataRegulation[5],
         };
-        s.push(fakeData);
+        ConfirmedData.push(fakeData);
 
       }
     
     
-    const finalUsersData=s.slice(-20);
+    const finalUsersData=ConfirmedData.slice(-20);
     return finalUsersData;
    
   }
